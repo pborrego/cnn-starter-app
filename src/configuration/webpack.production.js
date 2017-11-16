@@ -48,6 +48,8 @@ module.exports = {
                             // https://github.com/webpack-contrib/css-loader
                             loader: 'css-loader',
                             options: {
+                                // Number of loaders applied before CSS loader
+                                importLoaders: 1,
                                 // Configure the generated ident
                                 localIdentName: '[hash:8]',
                                 // Enable/Disable CSS Modules
