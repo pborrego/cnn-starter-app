@@ -83,7 +83,10 @@ module.exports = {
                             plugins: function () {
                                 return [
                                     require('postcss-import'),
-                                    require('postcss-cssnext')
+                                    require('postcss-cssnext'),
+                                    require('postcss-each'),
+                                    require('postcss-mixins'),
+                                    require('postcss-nesting')
                                 ]
                             }
                         }
